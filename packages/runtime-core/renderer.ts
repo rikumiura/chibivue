@@ -1,4 +1,13 @@
-import { RendererElement, RendererOptions } from "./componentOptions"
+export interface RendererOptions<HostNode = RendererNode> {
+  setElementText(node: HostNode, text: string): void
+}
+
+export interface RendererNode {
+  [key: string]: any
+}
+
+export interface RendererElement extends RendererNode {}
+
 
 export type RootRenderFunction<HostElement = RendererElement> = (
   message: string,
