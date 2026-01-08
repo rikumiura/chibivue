@@ -16,3 +16,14 @@ export const createApp = (options: Options): App => {
     },
   }
 }
+
+
+// import { createApp } from 'vue'
+
+// const app = createApp({
+//   render() {
+//     return 'Hello world.'
+//   },
+// })
+
+// app.mount('#app')
